@@ -5,3 +5,13 @@ h1 {
   font-size: 96px;
   line-height: 1;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.myName {
+  font-style: italic;
+}
