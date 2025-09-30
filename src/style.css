@@ -54,10 +54,34 @@ header a {
 }
 
 footer {
-  display: flex;
-  margin-top: 20px;
-  gap: 5px;
-  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/lisbon-footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  color: rgb(194, 187, 187);
+}
+
+.containerBottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 30px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: rgb(194, 187, 187);
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer h3 {
+  font-size: 15px;
 }
 
 .myName {
@@ -88,5 +112,11 @@ footer {
     color: black;
     padding: 5px 10px;
     margin: 20px 15px;
+  }
+
+  .containerBottom {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    text-align: center;
   }
 }
