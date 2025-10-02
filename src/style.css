@@ -53,6 +53,29 @@ header a {
   text-transform: uppercase;
 }
 
+section {
+  background-color: white;
+  padding: 20px 40px;
+}
+
+.buildingsection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  place-items: center;
+}
+
+.buildingsection h3 {
+  font-size: 20px;
+  line-height: 0;
+  color: rgb(194, 187, 187);
+}
+
+.buildingsection h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/lisbon-footer.png);
@@ -118,5 +141,9 @@ footer h3 {
     grid-template-columns: 1fr;
     grid-gap: 0px;
     text-align: center;
+  }
+
+  .buildingsection {
+    grid-template-columns: 1fr;
   }
 }
