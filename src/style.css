@@ -55,6 +55,7 @@ h5 {
 
 .card-layout {
   background-color: rgb(248, 248, 248);
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -78,6 +79,31 @@ h5 {
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
+}
+
+.instagram-embeds {
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.insta-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.insta-header h3 {
+  font-size: 20px;
+  line-height: 0;
+  color: rgb(194, 187, 187);
+  text-align: center;
+}
+
+.insta-header h2 {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .cafe-header h3 {
@@ -150,6 +176,8 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
   place-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .buildingsection h3 {
@@ -242,6 +270,10 @@ footer h3 {
     grid-template-columns: 1fr;
   }
 
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+
   .img-embed {
     display: none;
   }
@@ -249,5 +281,9 @@ footer h3 {
   .embed {
     width: 100%;
     aspect-ratio: 16/9;
+  }
+
+  .insta-cards {
+    grid-template-columns: 1fr;
   }
 }
