@@ -64,14 +64,30 @@ h5 {
   grid-gap: 10px;
 }
 
-.card-header h3 {
+.card-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.img-embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.cafe-header h3 {
   font-size: 20px;
   line-height: 0;
   color: rgb(194, 187, 187);
   text-align: center;
 }
 
-.card-header h2 {
+.cafe-header h2 {
   font-size: 30px;
   margin: 0;
   text-align: center;
@@ -224,5 +240,14 @@ footer h3 {
 
   .cafe-grid {
     grid-template-columns: 1fr;
+  }
+
+  .img-embed {
+    display: none;
+  }
+
+  .embed {
+    width: 100%;
+    aspect-ratio: 16/9;
   }
 }
